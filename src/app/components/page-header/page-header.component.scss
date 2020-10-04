@@ -1,14 +1,111 @@
 .float-left
 {
     float: left;
+    width: 150px;
 }
 .float-right
 {
     float: right;
+    .btn
+    {
+        border-radius: 10px !important;
+    }
 }
 .header
 {
-    padding: 10px 14px;
+    padding: 10px 1%;
     height: 50px;
     max-height: 50px;
+    .white-div
+    {
+        border-left: 1px ridge white;
+        height: 30px;
+        width: 1px;
+    }
+    a
+    {
+        &:hover
+        {
+            font-weight: bold;
+        }
+    }
+    .text-light
+    {
+        margin: 0;
+    }
+}
+
+.header-responsive
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    height: calc(100% - 60px);
+    justify-content: space-between;
+    background-color: #28a745;
+    width: 0%;
+    transition: 2s;
+    overflow: hidden;
+    z-index: 99;
+    .navigate-responsive
+    {
+        display: flex;
+        flex-direction: column;
+        a 
+        {
+            font-size: 32px;
+            border-bottom: 1px ridge white;
+            width: 100%;
+            text-align: center;
+            &:hover
+            {
+                background-color: #218838;
+            }
+        }
+    }
+}
+.header-responsive-open
+{
+    width: 50%;
+}
+a
+{
+    text-decoration: none;
+}
+.last-button
+{
+    justify-content: flex-end;
+}
+.last-button-responsive
+{
+    visibility: hidden;
+    display: none;
+}
+
+.list-box
+{
+    border: 1px ridge white;
+    font-size: 32px;
+    position: absolute;
+    margin-left: 1%;
+}
+
+div
+{
+    align-items: center;
+}
+
+@media all and (max-width:1000px)
+{
+    .navigate
+    {
+        visibility: hidden;
+        display: none;
+    }
+    .last-button-responsive
+    {
+        visibility: visible;
+        display: flex;
+    }
 }

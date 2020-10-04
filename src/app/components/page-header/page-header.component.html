@@ -1,9 +1,35 @@
-<header class="header container-fluid">
-    <div class="float-left">
-        <img src="/assets/logo.png" width="40" height="40">
+<header class="header container-fluid navbar col-sm-12">
+    <div class="col-9">
+        <div class="float-left justify-between nav">
+            <img src="/assets/logo.png" width="40" height="40">
+            <div class="white-div"></div>
+            <h5 class="text-light">Tetris Trial</h5>
+        </div>
+    </div>
+    <div class="float-right justify-between nav col-2 navigate">
+        <a class="text-light" [routerLink]="'/home'">Home</a>
+        <a class="text-light" [routerLink]="'/placar'">Placar</a>
+        <a class="text-light" [routerLink]="'/about'">Sobre</a>
     </div>
 
-    <div class="float-right">
-        
+    <div class="float-right col-1 nav last-button navigate">
+        <button type="button" class="btn btn-success">Baixe agora</button>
+    </div>
+
+    <div class="float-right col-1 nav last-button-responsive">
+        <i class="material-icons list-box rounded" (click)="setMenuResponsibility()">list</i>
+    </div>
+
+</header>
+
+<header class="header-responsive" [ngClass]="hiddenMenuClass">
+    <div class="navigate-responsive">
+        <a class="text-light" [routerLink]="'/home'">Home</a>
+        <a class="text-light" [routerLink]="'/placar'">Placar</a>
+        <a class="text-light" [routerLink]="'/about'">Sobre</a>
+    </div>
+
+    <div class="flex justify-center">
+        <button type="button" class="btn btn-success">Baixe agora</button>
     </div>
 </header>

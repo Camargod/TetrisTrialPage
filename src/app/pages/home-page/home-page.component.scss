@@ -1,0 +1,36 @@
+.home
+{
+    padding-top: 50px;
+    padding-left: 20%;
+    transition: 3s;
+    .title
+    {
+        font-size: 48px;
+    }
+    .text-about
+    {
+        margin-top: 30px;
+        margin-left: 2%;
+        width: 800px;
+        font-size: 26px;
+    }
+
+    @media all and(max-width:1200px)
+    {
+        padding-left: 10%;
+    }
+    @media all and(max-width:1000px)
+    {
+        .title
+        {
+            font-size: calc(10vw - 100%);
+        }
+        .text-about
+        {
+            font-size: calc(8vw - 100%);
+            width: 80%;
+        }
+        justify-content: center;
+        
+    }
+}
