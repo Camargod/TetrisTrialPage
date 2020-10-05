@@ -1,0 +1,35 @@
+.half
+{
+    flex:1;
+    width:50%
+}
+
+.about-text
+{
+    text-align:justify;
+}
+
+.home
+{
+    padding: 0px 25%;
+    .about-img
+    {
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        align-self:center;
+        margin-bottom: 14px;
+    }
+    .arrow
+    {
+        &:hover
+        {
+            cursor:pointer;
+        }
+    }
+}
+
+.text-center
+{
+    text-align:center;
+}
