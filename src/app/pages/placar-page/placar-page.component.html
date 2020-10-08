@@ -1,0 +1,11 @@
+<div class="flex placar-page direction-column h-100">
+    <h2 class="white">
+        Pontuações (WIP):
+    </h2>
+    <div class="h-100 grid">
+        <div class="placar grid" *ngFor="let item of score">
+            <p>{{item.nick}}</p>
+            <p class="flex justify-end">{{item.score}}</p>
+        </div>
+    </div>
+</div>

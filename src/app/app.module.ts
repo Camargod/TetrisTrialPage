@@ -8,6 +8,8 @@ import { PageHeaderComponent } from './components/page-header/page-header.compon
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { PlacarPageComponent } from './pages/placar-page/placar-page.component';
+import { PlayNowPageComponent } from './pages/play-now-page/play-now-page.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     AppComponent,
     PageHeaderComponent,
     HomePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    PlacarPageComponent,
+    PlayNowPageComponent
   ],
   imports: [
     BrowserModule,

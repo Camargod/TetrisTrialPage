@@ -8,12 +8,12 @@
     </div>
     <div class="float-right justify-between nav col-2 navigate">
         <a class="text-light" [routerLink]="'/home'">Home</a>
-        <a class="text-light" [routerLink]="'/placar'">Placar</a>
+        <a class="text-light" [routerLink]="'/score'">Placar</a>
         <a class="text-light" [routerLink]="'/about'">Sobre</a>
     </div>
 
     <div class="float-right col-1 nav last-button navigate">
-        <button type="button" class="btn btn-success">Baixe agora</button>
+        <button type="button" [routerLink]="'/play'" class="btn btn-success">Baixe agora</button>
     </div>
 
     <div class="float-right col-1 nav last-button-responsive">
@@ -25,11 +25,11 @@
 <header class="header-responsive" [ngClass]="hiddenMenuClass">
     <div class="navigate-responsive">
         <a class="text-light" [routerLink]="'/home'">Home</a>
-        <a class="text-light" [routerLink]="'/placar'">Placar</a>
+        <a class="text-light" [routerLink]="'/score'">Placar</a>
         <a class="text-light" [routerLink]="'/about'">Sobre</a>
     </div>
 
     <div class="flex justify-center">
-        <button type="button" class="btn btn-success">Baixe agora</button>
+        <button type="button" [routerLink]="'/play'" class="btn btn-success">Baixe agora</button>
     </div>
 </header>

@@ -4,11 +4,13 @@
         como nota para o quarto semestre na matéria de Desenvolvimento Web.
     </p>
     <div class="half flex direction-column justify-center">
-        <img class="about-img" [src]="'./assets/gabriel.jpg'">
-        <div class="flex justify-between">
-            <i class="material-icons arrow">keyboard_arrow_left</i> 
-            <div class="flex direction-column"> <p>Gabriel Silva de Camargo</p> <p class="text-center"> FullStack Developer </p> </div>
-            <i class="material-icons arrow">keyboard_arrow_right</i>
+        <div class="flex justify-between align-end">
+            <i class="material-icons arrow" (click)="changeColabPicture(-1)">keyboard_arrow_left</i> 
+            <div class="flex direction-column colabs white"> 
+                <img class="about-img transition" [src]='colabs[colabActualIndex].picture'>
+                <h5 class="text-center">{{colabs[colabActualIndex].name}}</h5> <h5 class="text-center"> {{colabs[colabActualIndex].role}}</h5> 
+            </div>
+            <i class="material-icons arrow" (click)="changeColabPicture(1)">keyboard_arrow_right</i>
         </div>
     </div>
 </div>
