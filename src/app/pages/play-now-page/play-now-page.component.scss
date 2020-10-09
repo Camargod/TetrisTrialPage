@@ -1,0 +1,34 @@
+
+.play-now
+{
+    .padding
+    {
+        padding: 6% 0px 10% 0px;
+    }
+    .w-50
+    {
+        width: 50%;
+        @media all and (max-width:1000px)
+        {
+            width: 70%;
+        }
+    }
+    .h-80
+    {
+        height: 80%;
+    }
+    .title
+    {
+        margin-left: -30%;
+    }
+    .send-button
+    {
+        float: right;
+        width: 80px;
+        align-self: flex-end;
+    }
+    .age
+    {
+        width: 150px;
+    }
+}

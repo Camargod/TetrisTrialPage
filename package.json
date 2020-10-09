@@ -10,15 +10,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "httpServer": "ng build --prod --aot && http-server -g -p 8080 -c-1 dist/AngularTetrisPage"
-
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~10.1.4",
+    "@angular/animations": "^10.1.5",
+    "@angular/cdk": "^10.2.4",
     "@angular/common": "~10.1.4",
     "@angular/compiler": "~10.1.4",
     "@angular/core": "~10.1.4",
     "@angular/forms": "~10.1.4",
+    "@angular/material": "^10.2.4",
     "@angular/platform-browser": "~10.1.4",
     "@angular/platform-browser-dynamic": "~10.1.4",
     "@angular/router": "~10.1.4",
@@ -26,6 +27,7 @@
     "bootstrap": "^4.5.2",
     "express": "^4.17.1",
     "http-server": "^0.12.3",
+    "ng-snotify": "^9.0.1",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

@@ -25,7 +25,12 @@ export class AboutPageComponent implements OnInit {
   colabs =
   [
     {name:"Gabriel Silva de Camargo", picture:"./assets/gabriel.jpg", role:"FullStack Developer / Game Programmer"},
-    {name:"Augusto Sousa Gomes", picture:"./assets/augusto.jpg",role:"Documentador"}
+    {name:"Augusto Sousa Gomes", picture:"./assets/augusto.jpg",role:"Documentador"},
+    {name:"Giulia Neves", picture:"./assets/giulia.png",role:"Roteirista"},
+    {name:"Fernando Plá", picture:"./assets/pla.jpg",role:"Arte"},
+    {name:"André Luis Ramos", picture:"./assets/andre.jpg",role:"Sound Effects"},
+    {name:"Breno Capitanio", picture:"./assets/breno.jpg",role:"Som e Música"},
+    
   ]
   constructor() { }
   

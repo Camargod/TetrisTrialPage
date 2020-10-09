@@ -1,1 +1,38 @@
-<p>play-now-page works!</p>
+<div class="flex direction-column h-100 justify-center align-center play-now">
+    <div class="flex direction-column title">
+        <h1 class="white">Baixe aqui:</h1>
+        <p class="white">Para pode realizar o download, crie seu cadastro e o jogo será enviado por e-mail.</p>
+    </div>
+
+    <form form [formGroup]="signUpForm" class="flex direction-column justify-between h-80 padding w-50" (ngSubmit)="submit()">
+        <div class="input-group w-50">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Nome:</div>
+            </div>
+            <input type="text" class="form-control" formControlName="name">
+        </div>
+
+        <div class="input-group w-50">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Nickname:</div>
+            </div>
+            <input type="text" class="form-control" formControlName="nickname">
+        </div>
+
+        <div class="input-group age">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Idade:</div>
+            </div>
+            <input type="text" class="form-control datepicker" formControlName="birthday">
+        </div>
+
+        <div class="input-group w-50">
+            <div class="input-group-prepend">
+              <div class="input-group-text">E-mail:</div>
+            </div>
+            <input type="text" class="form-control" formControlName="email">
+        </div>
+
+        <button type="submit" class="send-button btn btn-success">Enviar</button>
+    </form>
+</div>
